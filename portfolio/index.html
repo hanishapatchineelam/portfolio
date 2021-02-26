@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f3a4633a0f.js" crossorigin="anonymous"></script>
   <title>My portfolio</title>
 </head>
 
@@ -25,9 +26,10 @@
           <ul>
             <li><a href="#main" data-after="Home">Home</a></li>
             <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#exp" data-after="experience">experiences</a></li>
+            <li><a href="#experiences" data-after="experience">experiences</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#contact" data-after="Contact">Say Hi</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="#footer" data-after="Contact">Say Hi</a></li>
           </ul>
         </div>
       </div>
@@ -73,55 +75,59 @@
   </section>
   <!-- End About Section -->
 
-  <!-- experience Section -->
-  <section id="exp">
-  <div class="exp container">
-      <h1>Experiences</h1>
-     <div>
-      <p>I have overall one year of frontend developer experience. My technical stach is HTML, CSS, Bootstrap, JavaScript,
-        Angular and React</p><br>
-      <h2>Frontend Engineer</h2>
-      <h2>Centrene Corporation, Tampa, Florida</h2>
-      <p>Built front facing Enrollment processing portal to be utilized in 29 states, 2K+ doctors, 100k+ patients and 5K+
-        pharmacies.
-        • Followed Micro frontend Architecture by breaking up frontend monoliths into multiple smaller, more manageable
-        pieces to improve frontend team’s efficiency.
-        • Used Rest APIs to map calls from the backend to the frontend.
-  
-        • Independently written Test cases using the Jasmine framework combined with Karma Test runner to unit test
-        application.
-      </p>
-      <h2>Frontend developer</h2>
-      <h2>DCart Logistics (sendfast), Hyderabad, India</h2>
-      <p>Collaborated with developer team, used Angular CLI to create 30+ Components, 15+ Services, Pipes to maintain Date
-        Time consistency in the application.
-        • Created actions to update data in reducers, used Redux Stores to handle the states and update UI.
-        • Implemented Angular Router to enable navigation from one view to the next as customer performs application
-        tasks.
-      </p><br>
-      <h2>Technical Support Associate</h2>
-      <h2>Tech Mahindra, Hyderabad, India</h2>
-      <p>Troubleshoot Hardware and Software issues and identify network/application issues.
-        • Walking 100’s of customers through configuration TCP/IP settings on multiple operating systems including Windows and Mac OS.</p>
-      <h2>Customer Service representative</h2>
-      <h2>Amazon, Hyderabad, India</h2>
-      <p>Independently handled customer service requests, deep dived & resolved 70+ issues per day
-        • Consistently scored 90%+ on customer rating for effective customer engagement & problem solving
-        • Awarded Customer Service Excellence (5 out of 100+) for exhibiting Amazon core leadership principle (Customer
-        Centricity)</p>
+ <!-- experience Section -->
+ <section id="experiences">
+  <div class="experiences container">
+    <div class="experience-top">
+      <h1 class="section-title">experience</h1>
+      <p>I have one year of frontend developer experience. My technology stack includes frontend technologies like HTML, CSS, Bootstrap, JavaScript, Angular and React. I have used Jenkins for continous integration and GitHub for version Control. </p>
+    </div>
+    <div class="experience-bottom">
+      <div class="experience-item">
+        <h2>Frontend Developer</h2>
+        <h3>Centene Corporation, Tampa, Florida</h3>
+        <p>Built front facing Enrollment processing portal to be utilized in 29 states, 2K+ doctors, 100k+ patients and 5K+ pharmacies.
+          • Created Mockups using Figma for design evaluation.
+          • Followed Micro frontend Architecture by breaking up frontend monoliths into multiple smaller, more manageable pieces to improve frontend team’s efficiency.
+          • Used Rest APIs to map calls from the backend to the frontend.
+          • Assisted Business Analysts in creating user stories and gathering requirements for bi-weekly sprints to ensure 100% quality project deliverables.
+          • Independently written Test cases using the Jasmine framework combined with Karma Test runner to unit test application.</p>
       </div>
-  </div>
-  
+      <div class="experience-item">
+        
+        <h2>Frontend Developer</h2>
+        <h3>DCart Logistics Pvt Limited (SENDFAST) | Hyderabad, TG</h3>
+        <p>Collaborated with developer team, used Angular CLI to create 30+ Components, 15+ Services, Pipes to maintain Date Time consistency in the application.
+          • Created actions to update data in reducers, used Redux Stores to handle the states and update UI.
+          • Implemented Angular Router to enable navigation from one view to the next as customer performs application tasks.
+          • Created unit test cases for angular applications using Jasmine to test individual functions/modules using test runner Karma.</p>
+      </div>
+      <div class="experience-item">
 
- 
+        <h2>Technical Support Associate</h2>
+        <h3>Tech Mahindra| Hyderabad, TG</h3>
+        <p>Troubleshoot Hardware and Software issues and identify network/application issues.
+          • Walking 100’s of customers through configuration TCP/IP settings on multiple operating systems including Windows and Mac OS.</p>
+      </div>
+      <div class="experience-item">
+
+        <h2>Customer Engagement Representative</h2>
+        <h3>Amazon | Hyderabad, TG</h3>
+        <p>Independently handled customer service requests, deep dived & resolved 70+ issues per day
+          • Consistently scored 90%+ on customer rating for effective customer engagement & problem solving
+          • Awarded Customer Service Excellence (5 out of 100+) for exhibiting Amazon core leadership principle (Customer Centricity)
+          </p>
+      </div>
+    </div>
+  </div>
 </section>
-  <!-- End experience Section -->
+<!-- End experience Section -->
 
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
+        <h1 class="section-title">Projects</h1>
       </div>
       <div class="all-projects">
         <div class="project-item">
@@ -195,36 +201,36 @@
   <section id="contact">
     <div class="contact container">
       <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
+        <h1 class="section-title">Contact Information</h1>
       </div>
       <div class="contact-items">
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+         <a href="#"><i class="fas fa-phone"style="font-size:60px;color:red;"></i></a>
           <div class="contact-info">
             <h1>Phone</h1>
-            <h2>+1 234 123 1234</h2>
-            <h2>+1 234 123 1234</h2>
+            <h2>+1 6156791818</h2>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <a href="#"><i class="fas fa-envelope"style="font-size:60px;color:red;"></i></a>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
+            <h2>hanisha12pgmail.com</h2>
           </div>
         </div>
         <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <a href="#"> <i class="fas fa-map-marker-alt"style="font-size:60px;color:red;"></i> </a>
           <div class="contact-info">
             <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
+            <h2>Austin, TX 78723</h2>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- End Contact Section -->
+  
+  
 
   <!-- Footer -->
   <section id="footer">
@@ -235,19 +241,16 @@
       <h2>Find me here</h2>
       <div class="social-icon">
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+          <a href="#"><i class="fab fa-facebook"style="font-size:40px;color:red;"></i></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+          <a href="#"><i class="fab fa-github"style="font-size:40px;color:red;"></i></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          <a href="#"><i class="fab fa-linkedin-in"style="font-size:40px;color:red;"></i></a>
         </div>
       </div>
-      <p>Copyright © 2020 Arfan. All rights reserved</p>
+      <p>Copyright © 2020 Hanisha. Inspired by Youtube</p>
     </div>
   </section>
   <!-- End Footer -->

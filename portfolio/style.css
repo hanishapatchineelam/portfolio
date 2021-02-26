@@ -132,7 +132,7 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.021);
+	color:pink;
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
@@ -418,7 +418,7 @@ p {
 #contact .contact-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
 }
-#contact .icon {
+#contact .a{
 	width: 70px;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -526,11 +526,60 @@ p {
 	/* End main */
 
 	/* experiences Section */
-	#experiences .experience-bottom .experience-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-	/* End experiences Section */
+#experiences .experiences {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#experiences .experience-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#experiences .experience-bottom {
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#experiences .experience-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	background-size:80%;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#experiences .experience-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color:darkcyan;
+	opacity: .9;
+	z-index: -1;
+}
+
+#experiences .experience-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#experiences .experience-item p {
+	color: white;
+	text-align: left;
+}
+/* End experiences Section */
 
 	/* Project */
 	#projects .project-item {
@@ -597,14 +646,12 @@ p {
 		width: 30%;
 		margin: 0;
 		flex-direction: row;
+    color: darkgoldenrod;
 	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
+
+
+
+	
 	#contact .contact-item .contact-info {
 		width: 100%;
 		text-align: left;
