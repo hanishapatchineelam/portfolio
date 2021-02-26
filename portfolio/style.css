@@ -19,7 +19,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  color:red;
+  color:blue;
 }
 img {
 	height: 100%;
@@ -564,7 +564,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color:darkcyan;
+	background-color:#485563;
 	opacity: .9;
 	z-index: -1;
 }
